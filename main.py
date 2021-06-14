@@ -3,10 +3,8 @@ import threading
 import time
 
 
-startMain = threading.Thread(target=subprocess.call, args=(["python", "Start_main.py"],))
-Main = threading.Thread(target=subprocess.call, args=(["python", "main.py"],))
+startMain = threading.Thread(target=subprocess.call, args=(["python", "start_do_com"],))
 
 time.sleep(1)
 
 startMain.start()
-Main.start()
